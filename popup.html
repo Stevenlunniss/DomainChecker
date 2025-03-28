@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Auth DNS Check</title>
+    <link rel="stylesheet" href="popup.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="container">
+        <h3>Email Authentication Check</h3>
+        <h4 id="domain-name">Loading domain...</h4>
+        <div id="error-message" class="error-message" style="display: none;"></div>
+
+        <div class="record-section">
+            <strong>SPF:</strong>
+            <span id="spf-status" class="status loading">⏳ Checking...</span>
+            <pre id="spf-record" class="record-data" style="display: none;"></pre>
+        </div>
+
+        <div class="record-section">
+            <strong>DMARC:</strong>
+            <span id="dmarc-status" class="status loading">⏳ Checking...</span>
+            <pre id="dmarc-record" class="record-data" style="display: none;"></pre>
+        </div>
+
+        <div class="record-section">
+            <strong>DKIM:</strong>
+            <span id="dkim-status" class="status loading">⏳ Checking common selectors...</span>
+            <pre id="dkim-record" class="record-data" style="display: none;"></pre>
+            <small id="dkim-info" style="display: none;">Note: Checks common selectors (e.g., default, google). May not find all DKIM keys.</small>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
