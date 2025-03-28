@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    min-width: 350px; /* Adjust as needed */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Spacing between elements */
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: normal;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.record-section {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.record-section strong {
+    color: #0056b3; /* Dark blue */
+}
+
+.status {
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* Status indicator styles */
+.status.loading { color: #888; /* Grey */ }
+.status.success { color: #28a745; /* Green */ }
+.status.not-found { color: #dc3545; /* Red */ }
+.status.error { color: #dc3545; /* Red */ }
+
+.record-data {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 5px;
+    background-color: #eef;
+    border: 1px dashed #ccc;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.85em;
+    white-space: pre-wrap; /* Wrap long lines */
+    word-wrap: break-word;
+}
+
+.error-message {
+    color: #dc3545; /* Red */
+    background-color: #f8d7da; /* Light red */
+    border: 1px solid #f5c6cb; /* Lighter red */
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+small {
+    font-size: 0.8em;
+    color: #666;
+    display: block; /* Ensure it takes its own line */
+    margin-top: 4px;
+}
